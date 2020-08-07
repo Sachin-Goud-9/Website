@@ -4,8 +4,10 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage":"http://Sachin-Goud-9.github.io/Website",
   "dependencies": {
     "@material-ui/core": "4.11.0",
+    "gh-pages": "3.1.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-reveal": "1.2.2",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
